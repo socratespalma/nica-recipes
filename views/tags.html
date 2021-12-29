@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../styles/vendor/normalize.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>NicaRecipes</title>
+  </head>
+  <body>
+    <main>
+      <header class="navbar">
+        <div class="container flex-nav">
+          <div class="nav-header">
+            <h2>Nica<span>Recipes</span></h2>
+            <button class="nav-toggle" id="navToggle">
+              <i class="fas fa-bars menu"></i>
+              <i class="fas fa-times close"></i>
+            </button>
+          </div>
+          <nav class="nav-links" id="nav-links">
+            <ul>
+              <li class="nav-link"><a href="./index.html">Home</a></li>
+              <li class="nav-link"><a href="./about.html">About</a></li>
+              <li class="nav-link"><a href="./tags.html">Tags</a></li>
+              <li class="nav-link"><a href="./recipes.html">Recipes</a></li>
+              <li class="nav-link">
+                <a href="./contact.html"><span>Contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="main-content">
+        <section class="main-content__tags">
+          <div class="mini-card">
+            <div class="mini-card__subcontainer">
+              <h3>Foods</h3>
+              <p>4 recipes</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__subcontainer">
+              <h3>Beverages</h3>
+              <p>2 recipes</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__subcontainer">
+              <h3>Desserts</h3>
+              <p>2 recipes</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        <p>© 2022 | NicaRecipes | Made by Sócrates Palma</p>
+      </footer>
+    </main>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

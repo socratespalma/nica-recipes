@@ -26,9 +26,64 @@
   </head>
   <body>
     <main>
-      <header></header>
-      <section class="main-content"></section>
-      <footer></footer>
+      <header class="navbar">
+        <div class="container flex-nav">
+          <div class="nav-header">
+            <h2>Nica<span>Recipes</span></h2>
+            <button class="nav-toggle" id="navToggle">
+              <i class="fas fa-bars menu"></i>
+              <i class="fas fa-times close"></i>
+            </button>
+          </div>
+          <nav class="nav-links" id="nav-links">
+            <ul>
+              <li class="nav-link"><a href="./index.html">Home</a></li>
+              <li class="nav-link"><a href="./about.html">About</a></li>
+              <li class="nav-link"><a href="./tags.html">Tags</a></li>
+              <li class="nav-link"><a href="./recipes.html">Recipes</a></li>
+              <li class="nav-link">
+                <a href="./contact.html"><span>Contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="main-content">
+        <section>
+          <article>
+            <h2>Get in touch with us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ea
+              nulla consequuntur placeat temporibus aliquam adipisci dolores.
+              Consequuntur quos nihil sequi, nostrum omnis pariatur vitae quo,
+              reprehenderit obcaecati quaerat quibusdam.
+            </p>
+          </article>
+          <!-- Missing form -->
+          <form action="">
+            <div class="form-control">
+              <label for="">Name</label>
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="form-control">
+              <label for="">Email</label>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-control">
+              <label for="">Message</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </form>
+        </section>
+      </section>
+      <footer class="footer">
+        <p>© 2022 | NicaRecipes | Made by Sócrates Palma</p>
+      </footer>
     </main>
+    <script src="../js/main.js"></script>
   </body>
 </html>
