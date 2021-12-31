@@ -57,7 +57,12 @@ main {
   flex-direction: column;
 }
 
-.nav-header span {
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.logo span {
   color: var(--honey-yellow);
 }
 
@@ -282,6 +287,69 @@ main {
   margin-top: 2rem;
 }
 
+.main-contact {
+  /* width: 80%; */
+  margin: 0 auto;
+  text-align: justify;
+  background-color: var(--denim);
+  padding: 6rem 3rem;
+}
+
+.main-contact article {
+  padding-bottom: 3rem;
+}
+
+.main-contact article h2 {
+  text-align: center;
+}
+
+.main-contact article p {
+  padding-top: 1rem;
+}
+
+form {
+  width: 80%;
+  background-color: var(--mint-cream);
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem 0 0.5rem;
+  margin-top: 0.3rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--mint-cream);
+  border-bottom: 2px solid var(--smoky-black);
+}
+
+textarea {
+  resize: none;
+  height: 5rem;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.7rem;
+  cursor: pointer;
+  margin: 1rem 0 0;
+  border-radius: 5px;
+  background-color: var(--smoky-black);
+  border: none;
+  color: var(--mint-cream);
+}
+
 @media only screen and (min-width: 920px) {
   .nav-toggle {
     display: none;
@@ -344,6 +412,22 @@ main {
 
   .mini-card {
     width: 30%;
+  }
+
+  .main-contact {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9rem 5rem;
+  }
+
+  .main-contact article {
+    width: 50%;
+  }
+
+  form {
+    width: 40%;
   }
 }
 
