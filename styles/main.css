@@ -374,6 +374,7 @@ textarea {
 .main__single-recipe p {
   text-align: justify;
   padding: 0 10%;
+  /* background-color: rebeccapurple; */
 }
 
 .single-recipe__info {
@@ -399,7 +400,8 @@ textarea {
   padding: 2rem 0;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   width: 80%;
 }
@@ -496,9 +498,8 @@ textarea {
   .main__sr-section {
     display: flex;
     margin: 0 auto;
-    /* background-color: rebeccapurple; */
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
   }
 }
 
