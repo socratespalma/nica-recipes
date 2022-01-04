@@ -112,10 +112,11 @@ main {
   background-image: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   height: 100vh;
   width: 100%;
+  text-align: center;
 }
 
 .hero__main-text {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .hero__sub-text {
@@ -142,12 +143,12 @@ main {
 }
 
 .food-section h2 {
-  padding: 5rem 0 2rem;
+  padding: 5rem 1rem 2rem;
 }
 
 .food-grid {
   display: grid;
-  padding: 1rem 3rem 5rem;
+  padding: 1rem 1rem 5rem;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -156,7 +157,7 @@ main {
 }
 
 .card {
-  width: 80%;
+  width: 90%;
   background-color: var(--mint-cream);
   color: var(--smoky-black);
   text-decoration: none;
@@ -172,7 +173,7 @@ main {
 
 .card-subcontainer {
   /* width: 80%; */
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .img-container,
@@ -183,19 +184,19 @@ main {
 }
 
 .img-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-container-about img {
   width: 200px;
   height: 200px;
   object-fit: cover;
 }
 
-.img-container-about img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
 .img-container-404 img {
-  width: 25rem;
+  width: 13rem;
   object-fit: cover;
 }
 
@@ -217,9 +218,14 @@ main {
 
 .tags {
   display: flex;
-  width: 90%;
+  flex-direction: column;
+  width: 80%;
+  gap: 2rem;
+  /* text-align: center; */
+  /* background-color: rebeccapurple; */
   margin: 0 auto;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  align-items: center;
   padding-bottom: 3rem;
 }
 
@@ -269,7 +275,7 @@ main {
 .mini-card {
   background-color: var(--denim);
   color: var(--mint-cream);
-  width: 50%;
+  width: 60%;
   padding: 2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -286,7 +292,7 @@ main {
 }
 
 .main-404-section p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-top: 2rem;
 }
 
@@ -295,7 +301,7 @@ main {
   margin: 0 auto;
   text-align: justify;
   background-color: var(--denim);
-  padding: 6rem 3rem;
+  padding: 6rem 2rem;
 }
 
 .main-contact article {
@@ -312,11 +318,11 @@ main {
 }
 
 form {
-  width: 80%;
+  width: 90%;
   background-color: var(--mint-cream);
   border-radius: 8px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .form-control {
@@ -374,13 +380,14 @@ textarea {
 .main__single-recipe p {
   text-align: justify;
   padding: 0 10%;
-  /* background-color: rebeccapurple; */
 }
 
 .single-recipe__info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 3rem;
+  margin-top: 2rem;
   align-items: center;
 }
 
@@ -400,10 +407,15 @@ textarea {
   padding: 2rem 0;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
   align-items: center;
   width: 80%;
+}
+
+.mini-tags__section span {
+  font-weight: bold;
 }
 
 .mini-tags__section a {
@@ -412,6 +424,92 @@ textarea {
   background-color: var(--imperial-red);
   padding: 0.5rem;
   border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem 3rem 6rem;
+  }
+
+  .img-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+  .main-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+  }
+
+  .main-article {
+    width: 50%;
+  }
+
+  .img-container-about img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .main-content__tags {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin: 0 auto;
+    gap: 3rem;
+    width: 90%;
+  }
+
+  .main-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding-top: 9rem;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .main-contact article {
+    width: 50%;
+  }
+  .main-contact form {
+    width: 50%;
+  }
+
+  .main__single-recipe {
+    height: 100vh;
+  }
+
+  .mini-tags__section,
+  .single-recipe__info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-container-404 img {
+    width: 30rem;
+    object-fit: cover;
+  }
+
+  .main-404-section p {
+    font-size: 1.9rem;
+  }
 }
 
 @media only screen and (min-width: 920px) {
