@@ -24,6 +24,9 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .container {
@@ -426,6 +429,11 @@ textarea {
   border-radius: 6px;
 }
 
+.heading-pt {
+  padding-top: 3rem;
+}
+
+/* For tablets */
 @media only screen and (min-width: 768px) {
   .food-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -492,14 +500,18 @@ textarea {
     width: 50%;
   }
 
-  .main__single-recipe {
+  /* .main__single-recipe {
     height: 100vh;
-  }
+  } */
 
   .mini-tags__section,
   .single-recipe__info {
     display: flex;
     flex-direction: row;
+  }
+
+  .main-contact {
+    padding: 9rem 3rem 6rem;
   }
 
   .img-container-404 img {
@@ -512,7 +524,8 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 920px) {
+/* For laptops */
+@media only screen and (min-width: 1024px) {
   .nav-toggle {
     display: none;
   }
@@ -548,10 +561,10 @@ textarea {
     border-radius: 8px;
   }
 
-  .food-grid {
+  /* .food-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
+  } */
 
   .main-about {
     display: flex;
@@ -592,20 +605,25 @@ textarea {
     width: 40%;
   }
 
-  /* missing media queries */
   .main__sr-section {
-    display: flex;
+    padding: 6rem 0 3rem;
     margin: 0 auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 70%;
   }
+
+  /* .food-section-tt {
+    height: 100vh;
+  } */
 }
 
-@media only screen and (min-width: 1024px) {
-  .food-grid {
+/* Todo: Missing these media queries */
+/* For 1440p screens */
+@media only screen and (min-width: 1440px) {
+  /* .food-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-  }
+  } */
 
   .card {
     width: 80%;
@@ -618,7 +636,8 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 1900px) {
+/* For 4k screens */
+@media only screen and (min-width: 2560px) {
   .main-content__tags {
     margin: 0 9rem;
   }

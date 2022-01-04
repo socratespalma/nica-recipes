@@ -1,6 +1,7 @@
 # Testing media queries
+Using the developer tools from the browser
 
-### List of devices
+## List of devices tested
 - Moto g4 -> passed
 - Galaxy s5 -> passed
 - Pixel 2 -> passed
@@ -9,12 +10,12 @@
 - iPhone 6/7/8 -> passed
 - iPhone 6/7/8 Plus -> passed
 - iPhone X -> passed
-- iPad
-- iPad Pro
+- iPad -> passed
+- iPad Pro -> passed
 - Surface Duo -> passed
 - Galaxy Fold -> passed
-- Nest Hub
-- Nest Hub Max
-- 1080p
-- 1440p
-- 4k
+- Nest Hub -> passed
+- Nest Hub Max -> passed
+- 1024px screens -> passed
+- 1440px screens
+- 4k screens
