@@ -17,5 +17,5 @@ Using the developer tools from the browser
 - Nest Hub -> passed
 - Nest Hub Max -> passed
 - 1024px screens -> passed
-- 1440px screens
-- 4k screens
+- 1440px screens -> passed
+- 4k screens -> passed
